@@ -7,47 +7,37 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons h3, main .
   font-size: 18px;
 }
 
-@media screen and (max-width: 549px) and (min-width: 320px) {
-  /* Header */
-  header {
-    flex-direction: column;
+@media (min-width: 1280px) {
+  .navbar-toggler {
+    margin-right: 30vw;
   }
-  .navbar {
-    padding: 10px;
+}
+@media screen and (min-width: 700px) and (max-width: 1279px) {
+  .footer-center_caja {
+    font-size: 17px;
   }
-  /* Footer */
-  footer {
-    width: 100%;
+  .footer-center_caja .textofooter {
+    font-size: 17px;
   }
-  .footer .container .footer-center_caja .textofooter, h5 {
-    font-size: 11px;
+}
+@media screen and (min-width: 550px) and (max-width: 699px) {
+  .footer-center_caja {
+    font-size: 14px;
   }
-  .footer .container .footer-center_caja a {
-    font-size: 11px;
+  .footer-center_caja .textofooter {
+    font-size: 14px;
   }
-  /* Inicio */
-  /* Acerca de Nosotros */
-  /* Materiales Const. & Seguridad Ind. */
-  /* Contáctenos */
-  .containergeneral .container-form {
-    margin: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 549px) {
+  main .seccion-textoppal {
+    height: 530px;
+    background-color: aqua;
   }
-  .container-form p {
-    font-size: 1px;
+  main .seccion-textoppal .contenedorinicio p {
+    font-size: 80px;
   }
-  .containergeneral .container-form .info-form a {
-    font-size: 8px;
-  }
-  .containergeneral .container-form form textarea {
-    width: 95%;
-    font-size: 8px;
-  }
-  .containergeneral .container-form form .campo {
-    width: 95%;
-    font-size: 8px;
-  }
-  .containergeneral .container-form .btn-enviar {
-    font-size: 10px;
+  .footer-center_caja .textofooter, .titulofooter {
+    font-size: 12px;
   }
 }
 * {
@@ -246,6 +236,9 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons img {
 .footer {
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(182, 6, 6) 41%, rgb(101, 2, 2) 100%);
+}
+.footer .container .footer-center_caja h5 {
+  font-size: 17px;
 }
 .footer .container .footer-center_caja a {
   color: white;
