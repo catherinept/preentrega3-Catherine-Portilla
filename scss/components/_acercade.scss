@@ -1,0 +1,21 @@
+main{
+    .contenedoracerca{
+        display: flex;
+        margin: 50px;
+        .textoacerca{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            color: #2c2b2b;
+            p{
+                padding-right: 20px;
+            }
+        }
+        .imagenacercade img{
+            width: 380px;
+            height: 320px;
+            padding: 20px;
+        }
+    }
+}
+

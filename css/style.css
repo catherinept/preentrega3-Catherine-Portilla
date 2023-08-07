@@ -1,0 +1,229 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: url(../Imagenes/Fondo-Nav-Bar.jpg) no-repeat;
+  background-size: cover;
+}
+header .navbar .container-fluid .logo img {
+  height: 150px;
+  width: 160px;
+  padding: 5px;
+}
+header .navbar .container-fluid .navbar-toggler {
+  background-color: rgba(190, 118, 118, 0.9607843137);
+  border: var(--bs-border-width) solid rgba(238, 131, 131, 0.327);
+  margin-right: 20px;
+}
+header .navbar .container-fluid .navbar-nav {
+  padding-left: 20px;
+}
+header .navbar .container-fluid .navbar-nav .nav-link {
+  color: white;
+  text-decoration: solid;
+  font-size: 17px;
+  white-space: pre-wrap !important; /* Evita el salto de línea */
+  overflow: hidden; /* Oculta el texto excedente */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) */
+}
+header .navbar .container-fluid .navbar-nav .nav-link:hover {
+  color: rgb(52, 52, 52);
+}
+
+/* Inicio - Index */
+main .seccion-textoppal {
+  background-color: rgba(2, 2, 2, 0.9607843137);
+  height: 250px;
+}
+main .seccion-textoppal .contenedorinicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .seccion-textoppal .contenedorinicio p {
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 50px;
+}
+main .seccion-textoppal .contenedorinicio h3 {
+  color: rgb(245, 99, 99);
+  font-size: 20px;
+}
+
+main .contenedoracerca {
+  display: flex;
+  margin: 50px;
+}
+main .contenedoracerca .textoacerca {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  color: #2c2b2b;
+}
+main .contenedoracerca .textoacerca p {
+  padding-right: 20px;
+}
+main .contenedoracerca .imagenacercade img {
+  width: 380px;
+  height: 320px;
+  padding: 20px;
+}
+
+/* Materiales de Construcción & Seguridad Industrial */
+main .textomatcons {
+  font-size: 18px;
+  margin: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+main .textoseguridadind {
+  font-size: 18px;
+  margin: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+main .contenedorprincipal {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+main .contenedorprincipal .contenedor {
+  max-width: 1300px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 16px 0px rgba(27, 91, 100, 0.25);
+}
+main .contenedorprincipal .contenedor .contenedorfotos {
+  display: flex;
+  justify-content: space-between;
+}
+main .contenedorprincipal .contenedor .contenedorfotos .imagensegind h3 {
+  display: block;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #272727;
+  font-size: 18px;
+}
+main .contenedorprincipal .contenedor .contenedorfotos .imagensegind img {
+  width: 380px;
+  height: 320px;
+  padding: 20px;
+}
+main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons h3 {
+  display: block;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #272727;
+  font-size: 18px;
+}
+main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons img {
+  width: 380px;
+  height: 320px;
+  padding: 20px;
+}
+
+.containergeneral {
+  padding-top: none;
+}
+.containergeneral .container-form {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-top: 70px;
+  text-align: justify;
+}
+.containergeneral .container-form .info-form p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-top: 30px;
+}
+.containergeneral .container-form .info-form a {
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  color: black;
+  font-weight: 700;
+}
+.containergeneral .container-form .info-form a i {
+  color: rgb(228, 5, 5);
+  margin-right: 10px;
+}
+.containergeneral .container-form form .campo {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+.containergeneral .container-form form textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+.containergeneral .container-form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: rgb(179, 2, 2);
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.containergeneral .container-form .btn-enviar:hover {
+  background: #c46b6b;
+}
+.containergeneral .container-form .cuadrocontacto {
+  margin-top: 30px;
+}
+
+/* Footer */
+.footer {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(182, 6, 6) 41%, rgb(101, 2, 2) 100%);
+}
+.footer .container .footer-center_caja p {
+  font-size: 17px;
+}
+.footer .container .footer-center_caja a {
+  color: white;
+  text-decoration: none;
+}
+.footer .container .footer-contacto {
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 549px) {
+  header {
+    flex-direction: column;
+  }
+  footer {
+    width: 100%;
+  }
+  .footer .container .footer-center_caja p {
+    font-size: 13px;
+  }
+  .footer .container .footer-center_caja a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
