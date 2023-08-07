@@ -1,9 +1,10 @@
-@import "./base/generales";
 @import "./base/variables";
+@import "./base/extend";
+@import "./base/mediaquery";
+@import "./base/generales";
 @import "./components/header";
 @import "./components/index";
 @import "./components/acercade";
 @import "./components/matyseg";
 @import "./components/contactenos";
 @import "./components/footer";
-@import "./base/mediaquery";

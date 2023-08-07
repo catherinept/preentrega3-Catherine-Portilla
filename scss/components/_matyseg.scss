@@ -26,11 +26,7 @@ main{
                 display: flex;
                 justify-content: space-between;
                 .imagensegind h3 {
-                    display:block;
-                    text-align: center;
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: #272727;
-                    font-size: 18px;
+                    @extend %block;
                 }
                 .imagensegind img{
                     width: 380px;
@@ -38,11 +34,7 @@ main{
                     padding: 20px;
                 }
                 .imagenmatcons h3 {
-                  display:block;
-                  text-align: center;
-                  font-family: Arial, Helvetica, sans-serif;
-                  color: #272727;
-                  font-size: 18px;
+                    @extend %block;
                 }
                 .imagenmatcons img{
                   width: 380px;

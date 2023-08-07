@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 
+/* Título General */
 main{
     h1{
-        color: red; 
-        align-items: center;
-        margin-top: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: $color-primary;
+        text-align: $text-align;
+        font-family: $font-family;
+        margin-top: $margin-top;
+        font-size: $font-size;
     }
 }

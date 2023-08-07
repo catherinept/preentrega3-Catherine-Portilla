@@ -1,17 +1,71 @@
 @charset "UTF-8";
+main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons h3, main .contenedorprincipal .contenedor .contenedorfotos .imagensegind h3 {
+  display: block;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #272727;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 549px) and (min-width: 320px) {
+  /* Header */
+  header {
+    flex-direction: column;
+  }
+  .navbar {
+    padding: 10px;
+  }
+  /* Footer */
+  footer {
+    width: 100%;
+  }
+  .footer .container .footer-center_caja .textofooter, h5 {
+    font-size: 11px;
+  }
+  .footer .container .footer-center_caja a {
+    font-size: 11px;
+  }
+  /* Inicio */
+  /* Acerca de Nosotros */
+  /* Materiales Const. & Seguridad Ind. */
+  /* Contáctenos */
+  .containergeneral .container-form {
+    margin: 10px;
+  }
+  .container-form p {
+    font-size: 1px;
+  }
+  .containergeneral .container-form .info-form a {
+    font-size: 8px;
+  }
+  .containergeneral .container-form form textarea {
+    width: 95%;
+    font-size: 8px;
+  }
+  .containergeneral .container-form form .campo {
+    width: 95%;
+    font-size: 8px;
+  }
+  .containergeneral .container-form .btn-enviar {
+    font-size: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Título General */
 main h1 {
-  color: red;
-  align-items: center;
-  margin-top: 20px;
+  color: #c10707;
+  text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 20px;
+  font-size: 25px;
 }
 
+/* Header */
 header {
   background: url(../Imagenes/Fondo-Nav-Bar.jpg) no-repeat;
   background-size: cover;
@@ -63,6 +117,7 @@ main .seccion-textoppal .contenedorinicio h3 {
   font-size: 20px;
 }
 
+/* Acerca de Nosotros */
 main .contenedoracerca {
   display: flex;
   margin: 50px;
@@ -111,24 +166,10 @@ main .contenedorprincipal .contenedor .contenedorfotos {
   display: flex;
   justify-content: space-between;
 }
-main .contenedorprincipal .contenedor .contenedorfotos .imagensegind h3 {
-  display: block;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #272727;
-  font-size: 18px;
-}
 main .contenedorprincipal .contenedor .contenedorfotos .imagensegind img {
   width: 380px;
   height: 320px;
   padding: 20px;
-}
-main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons h3 {
-  display: block;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #272727;
-  font-size: 18px;
 }
 main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons img {
   width: 380px;
@@ -136,6 +177,7 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons img {
   padding: 20px;
 }
 
+/* Contáctenos */
 .containergeneral {
   padding-top: none;
 }
@@ -205,32 +247,12 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons img {
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(182, 6, 6) 41%, rgb(101, 2, 2) 100%);
 }
-.footer .container .footer-center_caja p {
-  font-size: 17px;
-}
 .footer .container .footer-center_caja a {
   color: white;
   text-decoration: none;
 }
 .footer .container .footer-contacto {
   margin-top: 100px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 549px) {
-  header {
-    flex-direction: column;
-  }
-  footer {
-    width: 100%;
-  }
-  .footer .container .footer-center_caja p {
-    font-size: 13px;
-  }
-  .footer .container .footer-center_caja a {
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
