@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+main h1 {
+  color: red;
+  align-items: center;
+  margin-top: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 header {
   background: url(../Imagenes/Fondo-Nav-Bar.jpg) no-repeat;
   background-size: cover;
