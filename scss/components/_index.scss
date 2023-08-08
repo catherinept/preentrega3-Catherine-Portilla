@@ -1,23 +1,24 @@
 /* Inicio - Index */
-main{
-    .seccion-textoppal{
-        background-color: #020202f5;
-        height: 250px;
-        .contenedorinicio{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            p{
-                color: rgb(255, 255, 255);
-                justify-content: center;
-                font-size: 25px;
-                margin-top: 50px;
-            }
-            h3{
-                color: rgb(245, 99, 99);
-                font-size: 20px;
-            }
-        }
+.seccion-textoppal{
+    background-color: #020202f5;
+    height: 250px;
+}
+
+.contenedorinicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    p{
+        color: rgb(255, 255, 255);
+        justify-content: center;
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    h3{
+        color: rgb(245, 99, 99);
+        font-size: 20px;
     }
 }
+
+

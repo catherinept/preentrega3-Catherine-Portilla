@@ -1,5 +1,5 @@
 @charset "UTF-8";
-main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons h3, main .contenedorprincipal .contenedor .contenedorfotos .imagensegind h3 {
+.imagenmatcons h3, .imagensegind h3 {
   display: block;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -7,49 +7,76 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons h3, main .
   font-size: 18px;
 }
 
+.textomateriales, .textoseguridadind {
+  font-size: 18px;
+  margin: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
 @media (min-width: 1280px) {
   .navbar-toggler {
     margin-right: 30vw;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1279px) {
-  /* Header */
   header {
     flex-direction: column;
   }
-  .navbar {
-    padding: 10px;
+  nav {
+    padding: 10px 0px;
   }
   .navbar-toggler {
     margin-right: 10vw;
   }
-  /* Footer */
   .footer-center_caja {
     font-size: 16px;
+    align-items: center;
   }
-  .footer-center_caja .titulofooter {
+  .footer-center_caja h5 {
     font-size: 16px;
   }
-  .footer-center_caja .textofooter {
+  .footer-center_caja p {
+    font-size: 16px;
+  }
+  .footer-center_caja a {
     font-size: 16px;
   }
   /* Inicio */
   .seccion-textoppal {
     height: 240px;
   }
-  .contenedorinicio p {
-    font-size: 17px;
+  .seccion-textoppal p {
+    font-size: 18px;
   }
-  .contenedorinicio h3 {
-    font-size: 14px;
+  .seccion-textoppal h3 {
+    font-size: 17px;
     margin: 15px;
   }
   /* Acerca de Nosotros */
-  .textoacerca {
-    font-size: 15px;
-    text-align: justify;
+  .contenedoracerca {
+    display: grid;
   }
-  /* Pág. Materiales & Seguridad */
+  .textoacerca {
+    font-size: 16px;
+    text-align: justify;
+    width: 100%;
+  }
+  .imagenacercade {
+    display: grid;
+  }
+  .imagenacercade img {
+    width: 100%;
+    height: 100%;
+  }
+  /* Materiales & Seguridad */
+  .textomateriales {
+    font-size: 16px;
+  }
+  .textoseguridadind {
+    font-size: 16px;
+  }
   .contenedorprincipal {
     display: grid;
     place-content: center;
@@ -57,11 +84,8 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons h3, main .
   .contenedorfotos {
     flex-direction: column;
   }
-  .imagenmatcons {
-    font-size: 13px;
-  }
-  .imagensegind {
-    font-size: 13px;
+  .contenedorfotos h3 {
+    font-size: 14px;
   }
   /* Contáctenos */
   .containergeneral {
@@ -85,43 +109,61 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons h3, main .
   }
 }
 @media screen and (min-width: 550px) and (max-width: 699px) {
-  /* Header */
   header {
     flex-direction: column;
   }
-  .navbar {
-    padding: 10px;
+  nav {
+    padding: 10px 0px;
   }
   .navbar-toggler {
-    margin-right: 10vw;
+    margin-right: 5vw;
   }
-  /* Footer */
   .footer-center_caja {
-    font-size: 14px;
+    font-size: 13px;
   }
-  .footer-center_caja .titulofooter {
-    font-size: 14px;
+  .footer-center_caja h5 {
+    font-size: 13px;
   }
-  .footer-center_caja .textofooter {
-    font-size: 14px;
+  .footer-center_caja p {
+    font-size: 13px;
+  }
+  .footer-center_caja a {
+    font-size: 13px;
   }
   /* Inicio */
   .seccion-textoppal {
     height: 240px;
   }
-  .contenedorinicio p {
-    font-size: 15px;
+  .seccion-textoppal p {
+    font-size: 17px;
   }
-  .contenedorinicio h3 {
+  .seccion-textoppal h3 {
     font-size: 14px;
     margin: 15px;
   }
   /* Acerca de Nosotros */
-  .textoacerca {
-    font-size: 14px;
-    text-align: justify;
+  .contenedoracerca {
+    display: grid;
   }
-  /* Pág. Materiales & Seguridad */
+  .textoacerca {
+    font-size: 15px;
+    text-align: justify;
+    width: 100%;
+  }
+  .imagenacercade {
+    display: grid;
+  }
+  .imagenacercade img {
+    width: 100%;
+    height: 100%;
+  }
+  /* Materiales & Seguridad */
+  .textomateriales {
+    font-size: 15px;
+  }
+  .textoseguridadind {
+    font-size: 15px;
+  }
   .contenedorprincipal {
     display: grid;
     place-content: center;
@@ -129,10 +171,7 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons h3, main .
   .contenedorfotos {
     flex-direction: column;
   }
-  .imagenmatcons {
-    font-size: 13px;
-  }
-  .imagensegind {
+  .contenedorfotos h3 {
     font-size: 13px;
   }
   /* Contáctenos */
@@ -143,10 +182,10 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons h3, main .
     margin: 20px;
   }
   .container-form p {
-    font-size: 15px;
+    font-size: 14px;
   }
   .container-form a {
-    font-size: 15px;
+    font-size: 13px;
   }
   .container-form form .campo, textarea {
     width: 100%;
@@ -157,55 +196,85 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons h3, main .
   }
 }
 @media screen and (min-width: 320px) and (max-width: 549px) {
-  /* Header */
   header {
     flex-direction: column;
   }
-  .navbar {
-    padding: 10px;
+  nav {
+    padding: 10px 0px;
   }
   .navbar-toggler {
-    margin-right: 10vw;
+    margin-right: 5vw;
   }
-  /* Footer */
   .footer-center_caja {
-    font-size: 12px;
+    font-size: 10px;
   }
-  .footer-center_caja .titulofooter {
-    font-size: 12px;
+  .footer-center_caja h5 {
+    font-size: 10px;
   }
-  .footer-center_caja .textofooter {
+  .footer-center_caja p {
+    font-size: 10px;
+  }
+  .footer a {
     font-size: 12px;
   }
   /* Inicio */
   .seccion-textoppal {
-    height: 240px;
+    height: 230px;
   }
-  .contenedorinicio p {
-    font-size: 13px;
+  .seccion-textoppal p {
+    font-size: 15px;
   }
-  .contenedorinicio h3 {
-    font-size: 13px;
+  .seccion-textoppal h3 {
+    font-size: 12px;
     margin: 15px;
   }
   /* Acerca de Nosotros */
-  .textoacerca {
-    font-size: 13px;
-    text-align: justify;
-  }
-  /* Pág. Materiales & Seguridad */
-  .contenedorprincipal {
+  .contenedoracerca {
     display: grid;
-    place-content: center;
+  }
+  .textoacerca {
+    font-size: 12px;
+    text-align: justify;
+    width: 100%;
+  }
+  .imagenacercade {
+    display: grid;
+  }
+  .imagenacercade img {
+    width: 100%;
+    height: 100%;
+  }
+  /* Materiales & Seguridad */
+  .textomateriales {
+    font-size: 13px;
+  }
+  .textoseguridadind {
+    font-size: 13px;
+  }
+  .contenedor {
+    height: 100%;
+    width: 85%;
+    padding-bottom: 40px;
   }
   .contenedorfotos {
     flex-direction: column;
   }
-  .imagenmatcons {
-    font-size: 11px;
+  .contenedorfotos h3 {
+    font-size: 10px;
   }
-  .imagensegind {
-    font-size: 11px;
+  .imagenasegind {
+    flex-direction: column;
+  }
+  .imagensegind img {
+    width: 100%;
+    height: 80%;
+  }
+  .imagenmatcons {
+    flex-direction: column;
+  }
+  .imagenmatcons img {
+    width: 100%;
+    height: 95%;
   }
   /* Contáctenos */
   .containergeneral {
@@ -213,19 +282,20 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons h3, main .
   }
   .container-form {
     margin: 20px;
+    display: block;
   }
   .container-form p {
-    font-size: 12px;
+    font-size: 9px;
   }
   .container-form a {
-    font-size: 12px;
+    font-size: 8px;
   }
   .container-form form .campo, textarea {
-    width: 100%;
-    font-size: 12px;
+    width: 95%;
+    font-size: 8px;
   }
   .container-form .btn-enviar {
-    font-size: 12px;
+    font-size: 9px;
   }
 }
 * {
@@ -247,21 +317,16 @@ main h1 {
 header {
   background: url(../Imagenes/Fondo-Nav-Bar.jpg) no-repeat;
   background-size: cover;
+  width: 100%;
 }
-header .navbar .container-fluid .logo img {
+
+.logo img {
   height: 150px;
   width: 160px;
   padding: 5px;
 }
-header .navbar .container-fluid .navbar-toggler {
-  background-color: rgba(190, 118, 118, 0.9607843137);
-  border: var(--bs-border-width) solid rgba(238, 131, 131, 0.327);
-  margin-right: 20px;
-}
-header .navbar .container-fluid .navbar-nav {
-  padding-left: 20px;
-}
-header .navbar .container-fluid .navbar-nav .nav-link {
+
+.nav-link {
   color: white;
   text-decoration: solid;
   font-size: 17px;
@@ -269,70 +334,72 @@ header .navbar .container-fluid .navbar-nav .nav-link {
   overflow: hidden; /* Oculta el texto excedente */
   text-overflow: ellipsis; /* Muestra puntos suspensivos (...) */
 }
-header .navbar .container-fluid .navbar-nav .nav-link:hover {
+.nav-link:hover {
   color: rgb(52, 52, 52);
 }
 
+.navbar-toggler {
+  background-color: rgba(190, 118, 118, 0.9607843137);
+  border: var(--bs-border-width) solid rgba(238, 131, 131, 0.327);
+  margin-right: 20px;
+}
+
+.navbar-nav {
+  padding-left: 20px;
+}
+
 /* Inicio - Index */
-main .seccion-textoppal {
+.seccion-textoppal {
   background-color: rgba(2, 2, 2, 0.9607843137);
   height: 250px;
 }
-main .seccion-textoppal .contenedorinicio {
+
+.contenedorinicio {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-main .seccion-textoppal .contenedorinicio p {
+.contenedorinicio p {
   color: rgb(255, 255, 255);
   justify-content: center;
   font-size: 25px;
   margin-top: 50px;
 }
-main .seccion-textoppal .contenedorinicio h3 {
+.contenedorinicio h3 {
   color: rgb(245, 99, 99);
   font-size: 20px;
 }
 
 /* Acerca de Nosotros */
-main .contenedoracerca {
+.contenedoracerca {
   display: flex;
   margin: 50px;
 }
-main .contenedoracerca .textoacerca {
+
+.textoacerca {
   font-size: 17px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
   color: #2c2b2b;
 }
-main .contenedoracerca .textoacerca p {
-  padding-right: 20px;
+.textoacerca p {
+  padding: 20px;
 }
-main .contenedoracerca .imagenacercade img {
+
+.imagenacercade img {
   width: 380px;
   height: 320px;
   padding: 20px;
 }
 
-/* Materiales de Construcción & Seguridad Industrial */
-main .textomatcons {
-  font-size: 18px;
-  margin: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-main .textoseguridadind {
-  font-size: 18px;
-  margin: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-main .contenedorprincipal {
+/* Materiales de Construcción & Seguridad Ind.*/
+.contenedorprincipal {
   padding-top: 30px;
   padding-bottom: 100px;
 }
-main .contenedorprincipal .contenedor {
+
+.contenedor {
   max-width: 1300px;
   margin: auto;
   background-color: rgb(255, 255, 255);
@@ -340,26 +407,30 @@ main .contenedorprincipal .contenedor {
   border-radius: 20px;
   box-shadow: 0px 6px 16px 0px rgba(27, 91, 100, 0.25);
 }
-main .contenedorprincipal .contenedor .contenedorfotos {
+
+.contenedorfotos {
   display: flex;
   justify-content: space-between;
 }
-main .contenedorprincipal .contenedor .contenedorfotos .imagensegind img {
-  width: 380px;
-  height: 320px;
-  padding: 20px;
-}
-main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons img {
+
+.imagensegind img {
   width: 380px;
   height: 320px;
   padding: 20px;
 }
 
-/* Contáctenos */
+.imagenmatcons img {
+  width: 380px;
+  height: 320px;
+  padding: 20px;
+}
+
+/* Página Contáctenos */
 .containergeneral {
   padding-top: none;
 }
-.containergeneral .container-form {
+
+.container-form {
   margin: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -367,12 +438,12 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons img {
   margin-top: 70px;
   text-align: justify;
 }
-.containergeneral .container-form .info-form p {
+.container-form p {
   font-size: 17px;
   line-height: 1.6;
   margin-top: 30px;
 }
-.containergeneral .container-form .info-form a {
+.container-form a {
   font-size: 17px;
   display: inline-block;
   text-decoration: none;
@@ -380,11 +451,12 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons img {
   color: black;
   font-weight: 700;
 }
-.containergeneral .container-form .info-form a i {
+.container-form a i {
   color: rgb(228, 5, 5);
   margin-right: 10px;
 }
-.containergeneral .container-form form .campo {
+
+.container-form form .campo, textarea {
   width: 100%;
   padding: 15px 10px;
   font-size: 15px;
@@ -393,46 +465,45 @@ main .contenedorprincipal .contenedor .contenedorfotos .imagenmatcons img {
   border-radius: 3px;
   outline: 0px;
 }
-.containergeneral .container-form form textarea {
-  width: 100%;
-  padding: 15px 10px;
-  font-size: 15px;
-  border: 1px solid #dbdbdb;
-  margin-bottom: 20px;
-  border-radius: 3px;
-  outline: 0px;
-}
-.containergeneral .container-form .btn-enviar {
+
+.container-form .btn-enviar {
   padding: 15px;
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: rgb(179, 2, 2);
+  background: rgb(228, 5, 5);
   color: white;
   border-radius: 3px;
   cursor: pointer;
   transition: all 300ms ease;
 }
-.containergeneral .container-form .btn-enviar:hover {
-  background: #c46b6b;
+.container-form .btn-enviar:hover {
+  background: #ff8b6e;
 }
-.containergeneral .container-form .cuadrocontacto {
+
+.cuadrocontacto {
   margin-top: 30px;
 }
 
-/* Footer */
+/* Footer Páginas */
 .footer {
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(182, 6, 6) 41%, rgb(101, 2, 2) 100%);
 }
-.footer .container .footer-center_caja h5 {
+
+.footer-center_caja p {
   font-size: 17px;
 }
-.footer .container .footer-center_caja a {
+.footer-center_caja h5 {
+  font-size: 18px;
+}
+.footer-center_caja a {
+  font-size: 17px;
   color: white;
   text-decoration: none;
 }
-.footer .container .footer-contacto {
+
+.footer-contacto {
   margin-top: 100px;
 }
 

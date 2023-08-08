@@ -1,70 +1,59 @@
-/* Contáctenos */
-
-.containergeneral{
+/* Página Contáctenos */
+.containergeneral {
     padding-top: none;
-    .container-form{
-        margin: 20px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 50px;
-        margin-top: 70px;
-        text-align: justify;
-        .info-form{
-            p{
-                font-size: 17px;
-                line-height: 1.6;
-                margin-top: 30px;
-            }
-            a{
-                font-size: 17px;
-                display: inline-block;
-                text-decoration: none;
-                width: 100%;
-                color: black;
-                font-weight: 700;
-                i{
-                    color: rgb(228, 5, 5);
-                    margin-right: 10px;
-                }
-            }       
-        }
-        form{
-            .campo{
-                width: 100%;
-                padding: 15px 10px;
-                font-size: 15px;
-                border: 1px solid #dbdbdb;
-                margin-bottom: 20px;
-                border-radius: 3px;
-                outline: 0px;
-            }
-            textarea{
-                width: 100%;
-                padding: 15px 10px;
-                font-size: 15px;
-                border: 1px solid #dbdbdb;
-                margin-bottom: 20px;
-                border-radius: 3px;
-                outline: 0px;
-            }
-        }
-        .btn-enviar{
-            padding: 15px;
-            font-size: 16px;
-            border: none;
-            outline: 0px;
-            background: rgb(179, 2, 2);
-            color: white;
-            border-radius: 3px;
-            cursor: pointer;
-            transition: all 300ms ease;
-            &:hover{
-                background: #c46b6b;
-            }
-        }
-        .cuadrocontacto{
-            margin-top: 30px;
+  }
+  
+.container-form {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 70px;
+    text-align: justify;
+    p{
+        font-size: 17px;
+        line-height: 1.6;
+        margin-top: 30px;
+    }
+    a{
+        font-size: 17px;
+        display: inline-block;
+        text-decoration: none;
+        width: 100%;
+        color: black;
+        font-weight: 700;
+        i{
+            color: rgb(228, 5, 5);
+            margin-right: 10px;
         }
     }
-
+}
+  
+.container-form form .campo, textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+  
+.container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: rgb(228, 5, 5);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    &:hover{
+        background: #ff8b6e;
+    }
+}
+ 
+.cuadrocontacto{
+  margin-top: 30px;
 }

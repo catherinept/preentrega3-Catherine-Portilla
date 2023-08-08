@@ -1,47 +1,47 @@
-/* Materiales de Construcción & Seguridad Industrial */
-main{
-    .textomatcons{
-        font-size: 18px;
-        margin: 25px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center; 
-    }
-    .textoseguridadind {
-        font-size: 18px;
-        margin: 25px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-    }
-    .contenedorprincipal{
-        padding-top: 30px;
-        padding-bottom: 100px;
-        .contenedor{
-            max-width: 1300px;
-            margin: auto;
-            background-color: rgb(255, 255, 255);
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0px 6px 16px 0px rgba(27, 91, 100, 0.25);
-            .contenedorfotos{
-                display: flex;
-                justify-content: space-between;
-                .imagensegind h3 {
-                    @extend %block;
-                }
-                .imagensegind img{
-                    width: 380px;
-                    height: 320px;
-                    padding: 20px;
-                }
-                .imagenmatcons h3 {
-                    @extend %block;
-                }
-                .imagenmatcons img{
-                  width: 380px;
-                  height: 320px;
-                  padding: 20px;
-                }
-            }
-        }
-    }
+/* Materiales de Construcción & Seguridad Ind.*/
+.textoseguridadind {
+    @extend %textopag;
+}
+
+.textomateriales {
+    @extend %textopag;
+}
+
+.contenedorprincipal {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.contenedor {
+    max-width: 1300px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 16px 0px rgba(27, 91, 100, 0.25);
+}
+
+.contenedorfotos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagensegind h3 {
+    @extend %block;
+}
+
+.imagensegind img{
+    width: 380px;
+    height: 320px;
+    padding: 20px;
+}
+
+.imagenmatcons h3 {
+    @extend %block;
+}
+
+.imagenmatcons img{
+  width: 380px;
+  height: 320px;
+  padding: 20px;
 }
